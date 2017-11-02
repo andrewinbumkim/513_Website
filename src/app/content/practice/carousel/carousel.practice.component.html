@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <h2 class="text-muted">Carousel</h2>
+    <!--<div>
+        Width:
+        <input [value]="width">
+    </div>
+    <div>
+        Height:
+        <input [value]="height">
+    </div>-->
+    <div class="row">
+        <carousel [interval]="myInterval" [noWrap]="noWrapSlides">
+            <slide *ngFor="let slide of slides;let i = index" [active]="slide.active">
+                <img [src]="slide.image" [style.width]="width" [style.height]="height">
+                <div class="carousel-caption">
+                    <h4>Slide {{i + 1}}</h4>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>

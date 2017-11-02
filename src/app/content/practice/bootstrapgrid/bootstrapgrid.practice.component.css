@@ -1,0 +1,10 @@
+.my-custom-col {
+    padding: 0.875rem;
+    text-align: center;
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+}
+
+.my-custom-row {
+    margin: 2px 0px;
+}
